@@ -5,18 +5,14 @@
     <link href="styles/default.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
-
+       <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
     <telerik:RadPageLayout runat="server" ID="JumbotronLayout" CssClass="jumbotron" GridType="Fluid">
         <Rows>
             <telerik:LayoutRow>
                 <Columns>
-                    <telerik:LayoutColumn Span="10" SpanMd="12" SpanSm="12" SpanXs="12">
-                        <h1>Orders</h1>
-                        <h2>Customer Order Details</h2>
-                        <telerik:RadButton runat="server" ID="RadButton0" Text="Submit" ButtonType="SkinnedButton" Skin="WebBlue" Style="position: relative;"></telerik:RadButton>
-                    </telerik:LayoutColumn>
-                    <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
+                
+                 <telerik:LayoutColumn Span="2" HiddenMd="true" HiddenSm="true" HiddenXs="true">
                     </telerik:LayoutColumn>
                 </Columns>
             </telerik:LayoutRow>
@@ -43,16 +39,16 @@
                         UniqueName="Name">
                         <HeaderStyle Width="150px" />
                     </telerik:GridBoundColumn>
-                    <telerik:GridNumericColumn DataField="Age" HeaderText="Age" SortExpression="Age"
-                        UniqueName="Age">
+                    <telerik:GridNumericColumn DataField="InvoiceID" HeaderText="Invoice ID" SortExpression="InvoiceID"
+                        UniqueName="Invoice">
                         <HeaderStyle Width="150px" />
                     </telerik:GridNumericColumn>
-                    <telerik:GridDateTimeColumn DataField="BirthDate" HeaderText="BirthDate" SortExpression="BirthDate"
-                        UniqueName="BirthDate" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
+                    <telerik:GridDateTimeColumn DataField="OrderDate" HeaderText="Order Date" SortExpression="OrderDate"
+                        UniqueName="OrderDate" PickerType="DatePicker" DataFormatString="{0:MM/dd/yyyy}">
                         <HeaderStyle Width="150px" />
                     </telerik:GridDateTimeColumn>
-                    <telerik:GridRatingColumn DataField="Rating" HeaderText="Rating" SortExpression="Rating"
-                        UniqueName="Rating" GroupByExpression="Rating Group By Rating">
+                    <telerik:GridRatingColumn DataField="OrderTotal" HeaderText="Order Total" SortExpression="OrderTotal"
+                        UniqueName="Total" GroupByExpression="Orders Group By Total">
                         <HeaderStyle Width="150px" />
                     </telerik:GridRatingColumn>
                     <telerik:GridDropDownColumn DataField="City" HeaderText="City" SortExpression="City"
@@ -83,6 +79,15 @@
             }
         </script>
     </telerik:RadCodeBlock>
+
+     <br />
+      <br />
+     <hr class="my-4"/>
+
+     
+            <a href="default.aspx"><< Back to Home</a>
+         
+             <br/>
 </asp:Content>
 
 
