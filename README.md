@@ -1,4 +1,8 @@
-# AJsSweetsWebsite
+# AJs Sweets Website
+
+<img width="199" height="116" alt="ajslogo" src="https://github.com/user-attachments/assets/d50ef29d-b7aa-4c83-bcaf-37d428d0a75c" />
+
+
 
 A responsive web design demonstration project showcasing modern web development practices for a fictional sweets/confectionery business.
 
